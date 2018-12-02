@@ -44,6 +44,6 @@ inner join category ca
 on fc.category_id = ca.category_id
 
 where rental_date >= '2005-05-26'
-and rental_date <= '2005-05-27'
+and rental_date < '2005-05-27'
 group by ca.name
 order by rental_count desc
